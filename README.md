@@ -15,15 +15,15 @@ parameter and that is a void pointer to the fuse data. The way that this data is
 
 **fuseObj_t**
 
-`void* fuseData`
+`void* fuseData;`
 
-`time_t startTime`
+`time_t startTime;`
 
-`size_t fuseTimeSec`
+`size_t fuseTimeSec;`
 
-`onFuseEnd fuseEndFunc`
+`onFuseEnd fuseEndFunc;`
 
-`struct fuseObj_t* nextFuse`
+`struct fuseObj_t* nextFuse;`
 
 This structure defines an individual fuse. It has five different variables:
 1. A void pointer called `fuseData`, where the data associated with the fuse is located
@@ -39,9 +39,9 @@ in the methods section.
 
 **fuses_t**
 
-`fuseObj_t* fuses`
+`fuseObj_t* fuses;`
 
-`size_t numFuses`
+`size_t numFuses;`
 
 `fuseMethods_t* methods;`
 
@@ -86,7 +86,7 @@ integer which represents its success.
 
 **reset**
 
-`int (*reset)(fuses_t* fuses, size_t idx)`
+`int (*reset)(fuses_t* fuses, size_t idx);`
 - Resets the timer of the fuse at the requested index. It returns an integer which represents its success.
 
 **resetAll**

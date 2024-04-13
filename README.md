@@ -24,14 +24,11 @@ parameter and that is a void pointer to the fuse data. The way that this data is
 
 `onFuseEnd fuseEndFunc;`
 
-`struct fuseObj_t* nextFuse;`
-
 This structure defines an individual fuse. It has five different variables:
 1. A void pointer called `fuseData`, where the data associated with the fuse is located
 2. A variable of the type `time_t` called `startTime`, which notes when the fuse started
 3. A variable of the type `size_t` called `fuseTimeSec`, which notes how long the fuse is gonna last for in seconds
 4. A function pointer of the type `onFuseEnd` called `fuseEndFunc`, which is the function that'll be executed once the fuse time ends 
-5. A pointer to the next fuse instance called `nextFuse`
 
 **fuseMethods_t**
 

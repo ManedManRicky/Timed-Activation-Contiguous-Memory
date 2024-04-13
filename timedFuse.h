@@ -51,9 +51,6 @@
 		 * \param[in] void* fuseData
 		 */
 		onFuseEnd fuseEndFunc;
-
-		/*Next Fuse*/
-		struct fuseObj_t* nextFuse;
 	} fuseObj_t;
 	
 	/**

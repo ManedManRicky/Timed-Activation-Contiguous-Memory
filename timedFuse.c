@@ -9,7 +9,6 @@
 #pragma region Preprocessor
 /*Standard-Library Headers*/
 #include <stdlib.h>
-#include <string.h>
 /*User-Defined Headers*/
 #include "timedFuse.h"
 /*Definitions*/
